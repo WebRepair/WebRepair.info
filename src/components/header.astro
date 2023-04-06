@@ -3,9 +3,8 @@ import { Icon } from "astro-icon";
 import ThemeSwitcher from "~/components/theme-switcher.astro";
 
 const navItems = [
-  { title: "Features", url: "#features" },
-  { title: "Compatibility", url: "#compatibility" },
-  { title: "Showcase", url: "#showcase" },
+  { title: "Čo je WebRepair", url: "#features" },
+  { title: "Naše projekty", url: "#showcase" },
 ];
 ---
 
@@ -22,7 +21,7 @@ const navItems = [
           {
             navItems.map(({ title, url }) => (
               <li>
-                <a class="text-sm" href={url}>
+                <a class="text-lg" href={url}>
                   {title}
                 </a>
               </li>

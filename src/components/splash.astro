@@ -1,6 +1,5 @@
 ---
 import { generateImage } from "astro-eleventy-img";
-import { Icon } from "astro-icon";
 import Starfield from "~/components/starfield.astro";
 import HeroImage from "~/components/hero-image.astro";
 
@@ -30,11 +29,11 @@ const pngSrcset = png.map(({ srcset }) => srcset).join(",");
     >
     <!--   <Icon name="logomark" class="h-24 text-white md:h-32" /> -->
       <div
-        class="font-extrabold tracking-tighter text-center text-8xl gradient-text"
+        class=" ml-20 font-extrabold tracking-tighter text-center text-8xl gradient-text"
       >
         WebRepair
         
-        <br /> 
+        <div class=" tracking-wide text-3xl mt-7"> Lepšie Webstránky tvoria Lepší internet </div>
       </div>
     </h2>
     <picture

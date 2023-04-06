@@ -1,31 +1,31 @@
 [
   {
-    "title": "PoliNations",
-    "image": "src/data/showcase/images/polinations.png",
-    "url": "https://polinations.com/"
+    "title": "Copper Wood",
+    "image": "src/data/showcase/images/copperWood.png",
+    "url": "https://mellow-dolphin-1df20a.netlify.app/"
   },
   {
-    "title": "Astro Docs",
+    "title": "Next Website",
     "image": "src/data/showcase/images/astro-docs.png",
     "url": "https://docs.astro.build/"
   },
   {
-    "title": "<div>RIOTS",
+    "title": "Third website",
     "image": "src/data/showcase/images/divriots.png",
     "url": "https://divriots.com/"
   },
   {
-    "title": "Designcember",
+    "title": "no4",
     "image": "src/data/showcase/images/designcember.png",
     "url": "https://designcember.com/"
   },
   {
-    "title": "The Firebase Blog",
+    "title": "five",
     "image": "src/data/showcase/images/firebase-blog.png",
     "url": "https://firebase.blog/"
   },
   {
-    "title": "Corset",
+    "title": "sest",
     "image": "src/data/showcase/images/corset.png",
     "url": "https://corset.dev/"
   }
