@@ -13,20 +13,5 @@
     "title": "Third website",
     "image": "src/data/showcase/images/divriots.png",
     "url": "https://divriots.com/"
-  },
-  {
-    "title": "no4",
-    "image": "src/data/showcase/images/designcember.png",
-    "url": "https://designcember.com/"
-  },
-  {
-    "title": "five",
-    "image": "src/data/showcase/images/firebase-blog.png",
-    "url": "https://firebase.blog/"
-  },
-  {
-    "title": "sest",
-    "image": "src/data/showcase/images/corset.png",
-    "url": "https://corset.dev/"
   }
 ]
