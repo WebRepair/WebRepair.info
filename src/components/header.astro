@@ -1,6 +1,6 @@
 ---
 import { Icon } from "astro-icon";
-import ThemeSwitcher from "~/components/theme-switcher.astro";
+
 
 const navItems = [
   { title: "Čo je WebRepair", url: "#features" },
@@ -29,15 +29,8 @@ const navItems = [
           }
         </ul>
       </nav>
-      <button
-        id="open-nav-button"
-        type="button"
-        class="btn sm:hidden"
-        aria-label="Navigation"
-      >
-        <Icon pack="mdi" name="menu" class="h-8" />
-      </button>
-      <ThemeSwitcher />
+      
+      
     </div>
     <div id="menu-modal" class="hidden modal" aria-hidden="true">
       <div class="fixed inset-0 px-8 py-4 bg-default">
