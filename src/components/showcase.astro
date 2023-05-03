@@ -4,12 +4,63 @@ import ShowcaseCard from "~/components/showcase-card.astro";
 import sites from "~/data/showcase/sites.json";
 ---
 
-<ContentSection title="WebRepair Projekty" id="showcase">
-  <Fragment slot="lead">
+<ContentSection title="Design" id="showcase">
+  
     
-     <div class=" text-lg"> Náš cieľ je pravé Programmovanie <span class="text-primary"> rýchlych, bezpečných a prehľadných stránok </span>.{" "} </div> 
-     <div class=" text-lg"> <span class="text-primary">Design </span> môžte posúdiť sami počas celého procesu výroby. </div> 
-  </Fragment>
+    
+</ContentSection>
+
+
+
+<div class="embed-container">
+  <div class="flex justify-center">
+    <button id="view-button" class="px-10 border border-black hover:bg-slate-400">View</button>
+  </div>
+
+  <embed id="embed-element" src="https://ornate-custard-76dbaa.netlify.app/" class="mt-16 border border-black">
+</div>
+
+<style>
+  .embed-container {
+    position: relative;
+    width: 100%;
+    height: 0;
+    padding-bottom: 56.25%; /* 16:9 aspect ratio for desktop and tablet screens */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+  
+
+  .embed-container embed {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 85%;
+  }
+
+  @media screen and (max-width: 600px) {
+    .embed-container {
+      padding-bottom: 200%; /* 4:3 aspect ratio for mobile screens */
+      width: auto;
+      height: auto;
+    }
+  }
+</style>
+
+<script>
+  const viewButton = document.getElementById('view-button');
+  const embedElement = document.getElementById('embed-element');
+
+  viewButton.addEventListener('click', () => {
+    embedElement.scrollIntoView({ behavior: 'smooth' });
+  });
+</script>
+
+
+
+<!--    
   <div class="max-w-6xl space-y-2">
     <div class="grid grid-cols-1 gap-4 md:grid-cols-2 lg:grid-cols-3">
       {
@@ -19,5 +70,4 @@ import sites from "~/data/showcase/sites.json";
       }
     </div>
     
-  </div>
-</ContentSection>
+  </div>-->
