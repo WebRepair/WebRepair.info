@@ -3,12 +3,7 @@ import { Icon } from "astro-icon";
 
 const links = [
   {
-    url: "https://astro.build/",
-    description: "Kontakt",
-    icon: "fa-solid:at",
-  },
-  {
-    url: "https://github.com/withastro/astro",
+    url: "https://docs.google.com/forms/d/e/1FAIpQLSdrAxF_tUWsj50mdESsnW2FprG2S3OZn67SpiJwVreEiKj7bQ/viewform?usp=sf_link",
     description: "Kritika",
     icon: "mdi:comment-text",
   }
@@ -16,7 +11,7 @@ const links = [
 ---
 
 <footer class="bg-black relative flex items-center justify-center h-64">
-  
+  <div class=" mr-20 "> E-mail: webrepairsk@gmail.com </div> 
   <ul class="relative grid grid-cols-1 gap-4 sm:gap-10 sm:grid-cols-2">
     {
       links.map((link) => (
@@ -32,5 +27,6 @@ const links = [
         </li>
       ))
     }
+    
   </ul>
 </footer>
