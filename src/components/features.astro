@@ -3,51 +3,61 @@ import ContentSection from "~/components/content-section.astro";
 import { Icon } from "astro-icon";
 
 const features = [
-  {
-    title: "Náš Projekt",
-    description:
-      "Posielame E-mail firmám a súkromným osobám ktorých stránka nespĺňa moderné podmienky designu, rýchlosti a prehľadnosti.",
-    
-      icon: "mdi:handshake",
-  },
+//  {
+//    title: "Náš Projekt",
+ //   description:
+//      "1 000 eur, Embed",
+//    
+ //     icon: "mdi:handshake",
+ // },
   //{
-   // title: "100% Static HTML, No JS",
+   // title: "Náš Projekt",
    // description:
-   //   "Astro renders your entire page to static HTML, removing all JavaScript from your final build by default.",
-   // icon: "mdi:feather",
+   //   Posielame E-mail firmám a súkromným osobám ktorých stránka nespĺňa moderné podmienky designu, rýchlosti a prehľadnosti.",
+   // icon: "mdi:handshake",
   //},
+//  {
+//    title: "AI chat",
+//    description:
+//      "Chat with data",
+//    icon: "mdi:rocket",
+ // },
  // {
-   // title: "On-Demand Components",
-   // description:
-   //   "Need some JS? Astro can automatically hydrate interactive components when they become visible on the page. If the user never sees it, they never load it.",
-  //  icon: "mdi:directions-fork",
- // },
-  {
-    title: "Neustále sa zlepšujeme",
-    description:
-      "Sme mladá firma plná mladých ľudí, ktorých cieľ je vybudovať ten najlepší servis a technológie.",
-    icon: "mdi:rocket",
-  },
+ //   title: "2nd tier",
+//    description:
+ //     "1 420 eur, custom web + AI",
+ //   icon: "mdi:rocket",
+//  },
   //{
-  //  title: "SEO Enabled",
+  //  title: "Budujeme komunitu",
   //  description:
-  //    "Automatic sitemaps, RSS feeds, pagination and collections take the pain out of SEO and syndication.",
-  //  icon: "mdi:search-web",
+  //    "Ak nám zveríte vašu stránku, môžete ju kedykoľvek doplniť alebo zmeniť.",
+ //  icon: "mdi:account-group",
  // },
-  {
-    title: "Budujeme komunitu",
-    description:
-      "Ak nám zveríte vašu stránku, môžete ju kedykoľvek doplniť alebo zmeniť.",
-    icon: "mdi:account-group",
-  },
+ // },
+//  {
+//   title: "Full package",
+//   description:
+//      "2 000 eur",
+//    icon: "mdi:account-group",
+ // },
 ];
 ---
- 
-<ContentSection title="Cena a Služby" id="features">
-  <Fragment slot="lead">
-   Štandardná cena je <span class="text-primary">650 eur</span>.
-    Ak ste dostali email tak ste súčasťou nášho <span class=" text-purple-500">Projektu</span> a cena pre vás je <span class="text-primary">500 eur</span>.
+
+
+
+<div class="body"> 
+<ContentSection title="Your own AI-powered chat" id="features">
+  
     
+  <div class="embed-container">
+    <div class="flex justify-center">
+      <button id="view-button" class="px-10 border border-black hover:bg-slate-400">Vycentrovať</button>
+    </div>
+  
+    <embed id="embed-element" src="https://webrepairdemo.space/" class="mt-16 border border-black">
+  </div> 
+
   </Fragment>
   <ul class="grid max-w-6xl grid-cols-1 md:grid-cols-2 lg:grid-cols-3">
     {
@@ -63,14 +73,213 @@ const features = [
     }
   </ul>
 
+<div class="background">
+  <div class="container">
+    <div class="panel pricing-table">
+      
+      <div class="pricing-plan">
+        <img src="https://s22.postimg.cc/8mv5gn7w1/paper-plane.png" alt="" class="pricing-img">
+        <h2 class="pricing-header">Simple upgrade  </h2>
+        <ul class="pricing-features">
+          <li class="pricing-features-item">Upgrade of your existing website</li>
+        </ul>
+        <span class="pricing-price">1 000 €</span>
+        <a href="#/" class="pricing-button">Basic</a>
+      </div>
+      
+      <div class="pricing-plan">
+        <img src="https://s28.postimg.cc/ju5bnc3x9/plane.png" alt="" class="pricing-img">
+        <h2 class="pricing-header">New custom website</h2>
+        <ul class="pricing-features">
+          <li class="pricing-features-item">Own custom website</li>
+        </ul>
+        <span class="pricing-price">1 420 €</span>
+        <a href="#/" class="pricing-button is-featured">Advanced</a>
+      </div>
+      
+      <div class="pricing-plan">
+        <img src="https://s21.postimg.cc/tpm0cge4n/space-ship.png" alt="" class="pricing-img">
+        <h2 class="pricing-header">Enterprise</h2>
+        <ul class="pricing-features">
+          <li class="pricing-features-item">Large custom website</li>
+        </ul>
+        <span class="pricing-price">2 000 €</span>
+        <a href="#/" class="pricing-button">Enterprise</a>
+      </div>
+      
+    </div>
+  </div>
+</div>
 
-  <div class=" mb-52"> Ak máte návrh na spoluprácu s našimi projektmi, neváhajte nás kontaktovať. </div>
+<div> 
+    <div class=" features text-2xl "> Things included in the basic plan  </div>
+</div>
 
 
-
-  <div class=" text-lg"> Náš cieľ je pravé <span class=" font-mono "> Programmovanie </span>  <span class="text-primary"> rýchlych, spoľahlivých a prehľadných stránok. </span> </div>
   
-  <div class=" text-lg"> Naše webstránky sú programované študentmi počítačových vied a elektrotechniky. </div>
-
-  <div class=" text-lg"> <span class="text-primary">Design </span> môžete posúdiť sami počas celého procesu výroby. </div> 
 </ContentSection>
+</div>
+
+<style>
+
+  .body {
+    color: #ddecfa;
+  }
+
+  html {
+  box-sizing: border-box;
+  font-family: 'Open Sans', sans-serif;
+}
+
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+
+.background {
+  padding: 0 25px 25px;
+  position: relative;
+  width: 100%;
+}
+
+.background::after {
+  content: '';
+  background: #60a9ff;
+  background: -moz-linear-gradient(top, #60a9ff 0%, #4394f4 100%);
+  background: -webkit-linear-gradient(top, #60a9ff 0%,#4394f4 100%);
+  background: linear-gradient(to bottom, #60a9ff 0%,#4394f4 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#60a9ff', endColorstr='#4394f4',GradientType=0 );
+  height: 350px;
+  left: 0;
+  position: absolute;
+  top: 0;
+  width: 100%;
+  z-index: 1;
+}
+
+@media (min-width: 900px) {
+  .background {
+    padding: 0 0 25px;
+  }
+}
+
+.container {
+  margin: 0 auto;
+  padding: 50px 0 0;
+  max-width: 960px;
+  width: 100%;
+}
+
+.panel {
+  background-color: #fff;
+  border-radius: 10px;
+  padding: 15px 25px;
+  position: relative;
+  width: 100%;
+  z-index: 10;
+}
+
+.pricing-table {
+  box-shadow: 0px 10px 13px -6px rgba(0, 0, 0, 0.08), 0px 20px 31px 3px rgba(0, 0, 0, 0.09), 0px 8px 20px 7px rgba(0, 0, 0, 0.02);
+  display: flex;
+  flex-direction: column;
+}
+
+@media (min-width: 900px) {
+  .pricing-table {
+    flex-direction: row;
+  }
+}
+
+.pricing-table * {
+  text-align: center;
+  text-transform: uppercase;
+}
+
+.pricing-plan {
+  border-bottom: 1px solid #e1f1ff;
+  padding: 25px;
+}
+
+.pricing-plan:last-child {
+  border-bottom: none;
+}
+
+@media (min-width: 900px) {
+  .pricing-plan {
+    border-bottom: none;
+    border-right: 1px solid #e1f1ff;
+    flex-basis: 100%;
+    padding: 25px 50px;
+  }
+
+  .pricing-plan:last-child {
+    border-right: none;
+  }
+}
+
+.pricing-img {
+  margin-bottom: 25px;
+  max-width: 100%;
+}
+
+.pricing-header {
+  color: #888;
+  font-weight: 600;
+  letter-spacing: 1px;
+}
+
+.pricing-features {
+  color: #016FF9;
+  font-weight: 600;
+  letter-spacing: 1px;
+  margin: 50px 0 25px;
+}
+
+.features {
+  color: #016FF9;
+}
+
+.pricing-features-item {
+  border-top: 1px solid #e1f1ff;
+  font-size: 12px;
+  line-height: 1.5;
+  padding: 15px 0;
+}
+
+.pricing-features-item:last-child {
+  border-bottom: 1px solid #e1f1ff;
+}
+
+.pricing-price {
+  color: #016FF9;
+  display: block;
+  font-size: 32px;
+  font-weight: 700;
+}
+
+.pricing-button {
+  border: 1px solid #9dd1ff;
+  border-radius: 10px;
+  color: #348EFE;
+  display: inline-block;
+  margin: 25px 0;
+  padding: 15px 35px;
+  text-decoration: none;
+  transition: all 150ms ease-in-out;
+}
+
+.pricing-button:hover,
+.pricing-button:focus {
+  background-color: #e1f1ff;
+}
+
+.pricing-button.is-featured {
+  background-color: #48aaff;
+  color: #fff;
+}
+
+.pricing-button.is-featured:hover,
+.pricing-button.is-featured:active {
+  background-color: #269aff;
+}
+</style>
